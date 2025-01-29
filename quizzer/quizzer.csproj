@@ -14,6 +14,16 @@
     <AvaloniaXaml Remove="Assets\Styles\Icons.axaml" />
     <AvaloniaXaml Remove="Assets\Styles\Styles.axaml" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <None Remove="Questions.json" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <AvaloniaResource Include="Questions.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AvaloniaResource>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Avalonia" />

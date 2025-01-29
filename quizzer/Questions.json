@@ -1,0 +1,342 @@
+﻿[
+  {
+    "text": "Jaká je primární funkce lymfocytů v imunitním systému?",
+    "answers": [
+      {
+        "text": "Fagocytóza bakterií",
+        "isCorrect": false
+      },
+      {
+        "text": "Rozpoznávání antigenů a regulace imunitní odpovědi",
+        "isCorrect": true
+      },
+      {
+        "text": "Produkce histaminu",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "text": "Který typ lymfocytů je odpovědný za produkci protilátek?",
+    "answers": [
+      {
+        "text": "T-lymfocyty",
+        "isCorrect": false
+      },
+      {
+        "text": "B-lymfocyty",
+        "isCorrect": true
+      },
+      {
+        "text": "Přirozené zabíječské buňky (NK buňky)",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "text": "Na jakém principu funguje průtoková cytometrie při analýze lymfocytů?",
+    "answers": [
+      {
+        "text": "Měření elektrické impedance v krevních vzorcích",
+        "isCorrect": false
+      },
+      {
+        "text": "Detekce rozptýleného světla a fluorescence vyzařované značenými buňkami",
+        "isCorrect": true
+      },
+      {
+        "text": "Ruční počítání buněk pod mikroskopem",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "text": "Který fluorochrom se běžně používá v průtokové cytometrii k označení CD markerů?",
+    "answers": [
+      {
+        "text": "Hematoxylin",
+        "isCorrect": false
+      },
+      {
+        "text": "FITC (Fluorescein-isothiokyanát)",
+        "isCorrect": true
+      },
+      {
+        "text": "Giemsovo barvivo",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "text": "Co znamená zkratka 'CD' v CD markerech?",
+    "answers": [
+      {
+        "text": "Buněčný determinant",
+        "isCorrect": false
+      },
+      {
+        "text": "Cluster diferenciace",
+        "isCorrect": true
+      },
+      {
+        "text": "Cytokinová definice",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "text": "Který CD marker je běžně spojován s pomocnými T buňkami?",
+    "answers": [
+      {
+        "text": "CD4",
+        "isCorrect": true
+      },
+      {
+        "text": "CD8",
+        "isCorrect": false
+      },
+      {
+        "text": "CD19",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "text": "Jaký typ buněk typicky exprimuje CD8 markery?",
+    "answers": [
+      {
+        "text": "T-pomocné buňky",
+        "isCorrect": false
+      },
+      {
+        "text": "Cytotoxické T buňky",
+        "isCorrect": true
+      },
+      {
+        "text": "B-lymfocyty",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "text": "Který CD marker je typický pro B-lymfocyty?",
+    "answers": [
+      {
+        "text": "CD4",
+        "isCorrect": false
+      },
+      {
+        "text": "CD8",
+        "isCorrect": false
+      },
+      {
+        "text": "CD19",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "text": "Jaký je hlavní význam průtokové cytometrie v klinické diagnostice?",
+    "answers": [
+      {
+        "text": "Určení hladiny krevní glukózy",
+        "isCorrect": false
+      },
+      {
+        "text": "Analýza imunofenotypu buněk a diagnostika hematologických onemocnění",
+        "isCorrect": true
+      },
+      {
+        "text": "Stanovení počtu krevních destiček",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "text": "Co znamená dvojité značení (dual-staining) v průtokové cytometrii?",
+    "answers": [
+      {
+        "text": "Použití dvou různých fluorochromů k identifikaci různých antigenů na jedné buňce",
+        "isCorrect": true
+      },
+      {
+        "text": "Barvení buněk pomocí hematoxylinu a eozinu",
+        "isCorrect": false
+      },
+      {
+        "text": "Značení dvou různých vzorků současně",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "text": "Jaký je hlavní princip aglutinace v imunologických testech?",
+    "answers": [
+      {
+        "text": "Vazba antigenů na specifické protilátky za vzniku viditelných shluků",
+        "isCorrect": true
+      },
+      {
+        "text": "Rozpad červených krvinek při kontaktu s protilátkami",
+        "isCorrect": false
+      },
+      {
+        "text": "Rozpouštění imunokomplexů v roztoku",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "text": "Která laboratorní metoda využívá precipitaci k detekci antigenů?",
+    "answers": [
+      {
+        "text": "ELISA",
+        "isCorrect": false
+      },
+      {
+        "text": "Imunodifuze",
+        "isCorrect": true
+      },
+      {
+        "text": "Western blot",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "text": "Jak se liší přímá a nepřímá aglutinace?",
+    "answers": [
+      {
+        "text": "Přímá aglutinace využívá neoznačené protilátky, zatímco nepřímá používá značené protilátky",
+        "isCorrect": true
+      },
+      {
+        "text": "Nepřímá aglutinace probíhá pouze in vivo",
+        "isCorrect": false
+      },
+      {
+        "text": "Přímá aglutinace vyžaduje enzymatické značení antigenů",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "text": "Jak se získává krevní sérum pro laboratorní testy?",
+    "answers": [
+      {
+        "text": "Odstředěním plné krve po přidání antikoagulantu",
+        "isCorrect": false
+      },
+      {
+        "text": "Odstředěním plné krve bez antikoagulantu, aby došlo ke srážení",
+        "isCorrect": true
+      },
+      {
+        "text": "Přefiltrováním plazmy přes speciální membránu",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "text": "Jaká látka se obvykle nepřidává do vzorků krve při přípravě séra?",
+    "answers": [
+      {
+        "text": "Antikoagulanty",
+        "isCorrect": true
+      },
+      {
+        "text": "Stabilizátory pH",
+        "isCorrect": false
+      },
+      {
+        "text": "Proteázové inhibitory",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "text": "Který z následujících testů je založen na latexové aglutinaci?",
+    "answers": [
+      {
+        "text": "Imunofluorescenční test",
+        "isCorrect": false
+      },
+      {
+        "text": "Rheumatoidní faktor test (RF test)",
+        "isCorrect": true
+      },
+      {
+        "text": "ELISA test",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "text": "Jak se nazývá metoda, která využívá dvourozměrnou imunodifúzi k porovnání antigenů?",
+    "answers": [
+      {
+        "text": "Ouchterlonyho test",
+        "isCorrect": true
+      },
+      {
+        "text": "Western blot",
+        "isCorrect": false
+      },
+      {
+        "text": "PCR",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "text": "Který test se běžně používá pro krevní skupinovou aglutinaci?",
+    "answers": [
+      {
+        "text": "Coombsův test",
+        "isCorrect": true
+      },
+      {
+        "text": "PCR",
+        "isCorrect": false
+      },
+      {
+        "text": "Nepřímá ELISA",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "text": "Jaký je rozdíl mezi precipitací a aglutinací?",
+    "answers": [
+      {
+        "text": "Precipitace probíhá v roztoku, zatímco aglutinace zahrnuje částice",
+        "isCorrect": true
+      },
+      {
+        "text": "Aglutinace vyžaduje enzymy, precipitace ne",
+        "isCorrect": false
+      },
+      {
+        "text": "Precipitace se využívá pouze v klinické praxi, aglutinace pouze ve výzkumu",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "text": "Coombsův test slouží k detekci:",
+    "answers": [
+      {
+        "text": "Přítomnosti volných antigenů v séru",
+        "isCorrect": false
+      },
+      {
+        "text": "Protilátek proti erytrocytům",
+        "isCorrect": true
+      },
+      {
+        "text": "Komplementu v krvi",
+        "isCorrect": false
+      }
+    ]
+  }
+]

@@ -3,13 +3,63 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:vm="clr-namespace:quizzer.ViewModels"
-			 mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+			 xmlns:converters="clr-namespace:quizzer.Converters"
+			 mc:Ignorable="d" d:DesignWidth="1920" d:DesignHeight="1080"
              x:Class="quizzer.Views.MainView"
              x:DataType="vm:MainViewModel">
-  <Design.DataContext>
-    <!-- This only sets the DataContext for the previewer in an IDE,
-         to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-    <vm:MainViewModel />
-  </Design.DataContext>
-  <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+	<Design.DataContext>
+		<vm:MainViewModel />
+	</Design.DataContext>
+	<UserControl.Resources>
+		<converters:BoolToColorConverter x:Key="BoolToColorConverter"/>
+	</UserControl.Resources>
+	<UserControl.Styles>
+		<Style Selector="ToggleButton:checked.Correct /template/ ContentPresenter#PART_ContentPresenter">
+			<Setter Property="Background" Value="Green"/>
+			<Setter Property="Opacity" Value="1"/>
+		</Style>
+		<Style Selector="ToggleButton:checked.Incorrect /template/ ContentPresenter#PART_ContentPresenter">
+			<Setter Property="Background" Value="Red"/>
+			<Setter Property="Opacity" Value="0.6"/>
+		</Style>
+		<Style Selector="ToggleButton.Incorrect">
+			<Setter Property="Background" Value="Red"/>
+			<Setter Property="Opacity" Value="1"/>
+		</Style>
+	</UserControl.Styles>
+	<Grid RowDefinitions="*,*,*" ColumnDefinitions="*,*,*">
+
+		<Grid Grid.Column="1" Grid.Row="1" RowDefinitions="Auto,Auto,Auto, Auto" ColumnDefinitions="*">
+			<ProgressBar  Margin="0 10" Height="20"
+                Minimum="0" Maximum="{Binding NumberOfQuestions}" Value="{Binding AsweredQuestions}"
+                ShowProgressText="True"/>
+
+			<TextBlock Grid.Row="1" Text="{Binding CurrentQuestion.Text}" FontSize="20" HorizontalAlignment="Center" Margin="10"/>
+			<ItemsControl Grid.Row="2" ItemsSource="{Binding CurrentQuestion.Answers}"   >
+				<ItemsControl.ItemTemplate>
+					<DataTemplate>
+						<ToggleButton
+							IsEnabled="{Binding !AnswerCorrect}"
+							Command="{Binding $parent[UserControl].((vm:MainViewModel)DataContext).CountAnsweredQuestions}"
+							CommandParameter="{Binding}"
+							Classes.Correct="{Binding AnswerCorrect}"
+							Classes.Incorrect="{Binding AnswerIncorrect}"
+							Content="{Binding Text}"
+							IsChecked="{Binding IsSelected, Mode=TwoWay}"
+							HorizontalAlignment="Stretch"
+							HorizontalContentAlignment="Center"
+							Margin="5"/>
+					</DataTemplate>
+				</ItemsControl.ItemTemplate>
+			</ItemsControl>
+			<StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
+				<Button Content="Previous" Command="{Binding PreviousQuestionCommand}" Margin="5"/>
+				<Button Content="Next" Command="{Binding NextQuestionCommand}" Margin="5"/>
+				<Button Content="Submit" Command="{Binding ValidateTestCommand}" Margin="5" IsEnabled="{Binding SubmitEnabled}"/>
+				<Button Content="Restart" Command="{Binding RestartTestCommand}" Margin="5" />
+			</StackPanel>
+		</Grid>
+		<TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding ResultText}" FontSize="16" Foreground="Red" HorizontalAlignment="Center" Margin="10"/>
+
+	</Grid>
 </UserControl>
