@@ -11,17 +11,5 @@
         Background="Transparent"
         Icon="/Assets/avalonia-logo.ico"
         Title="quizzer">
-<Panel>
-	<ExperimentalAcrylicBorder IsHitTestVisible="False">
-		<ExperimentalAcrylicBorder.Material>
-			<ExperimentalAcrylicMaterial
-                 BackgroundSource="Digger"
-                 TintColor="Black"
-                 TintOpacity="1"
-                 MaterialOpacity="0.65" />
-		</ExperimentalAcrylicBorder.Material>
-	</ExperimentalAcrylicBorder>
-
-	<Button Content="Buy Music"/>
-</Panel>
-		</Window>
+		<views:MainView />
+</Window>
