@@ -43,8 +43,7 @@ public partial class MainViewModel : ViewModelBase
 
     private void LoadQuestions()
     {
-        string projectRoot = Directory.GetParent(AppContext.BaseDirectory)!.Parent!.Parent!.Parent!.Parent!.FullName;
-        string filePath = Path.Combine(projectRoot, "quizzer\\questions.json");
+        string filePath = Path.Combine(AppContext.BaseDirectory, "questions.json");
 
         if (File.Exists(filePath))
         {
